@@ -7,7 +7,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,8 +17,8 @@ import java.util.ArrayList;
 
 public class CreateAccController {
 
-    @FXML
-    Label createAccCheckBox;
+//    @FXML
+//    Label createAccCheckBox;
     @FXML
     TextField fNameTextField;
     @FXML
@@ -28,26 +30,29 @@ public class CreateAccController {
     @FXML
     TextField uNameTextField;
     @FXML
-    TextField pWordTextField;
+    PasswordField pWordTextField;
     @FXML
-    TextField confirmPWordTextField;
+    PasswordField confirmPWordTextField;
 
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private ArrayList <User> users = new ArrayList();
+    private static ArrayList <User> users = new ArrayList();
+    private static String email;
+    private static String phoneNumber;
+    private static String username;
+    private static String password;
 
     @FXML
     public void createAccount(ActionEvent event) throws IOException {
         String firstName = fNameTextField.getText();
         String lastName = lNameTextField.getText();
-        String email = emailTextField.getText();
-        String phoneNumber = phoneNoTextField.getText();
-        String username = uNameTextField.getText();
-        String password = pWordTextField.getText();
+        //time to check and test email;
+        email = emailTextField.getText();
+        phoneNumber = phoneNoTextField.getText();
+        username = uNameTextField.getText();
+        password = pWordTextField.getText();
         String confirmPassWord = confirmPWordTextField.getText();
-
-        createAccCheckBox.
 
         User newUser = new User(firstName, lastName, email, phoneNumber, username, password);
         users.add(newUser);

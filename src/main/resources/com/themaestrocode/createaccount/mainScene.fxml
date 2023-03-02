@@ -7,27 +7,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<TitledPane accessibleRole="BUTTON" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="600.0" text="The Maestro code" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.themaestrocode.createaccount.MainSceneController">
+<TitledPane accessibleRole="BUTTON" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" text="The Maestro code" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.themaestrocode.createaccount.MainSceneController">
   <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="600.0">
          <children>
             <Label alignment="CENTER" layoutX="-2.0" layoutY="14.0" prefHeight="65.0" prefWidth="600.0" text="Welcome to The Maestro Code's App">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Button fx:id="logInBtn" layoutX="93.0" layoutY="139.0" mnemonicParsing="false" onAction="#goToLogInPage" prefHeight="60.0" prefWidth="180.0" text="Log in">
+            <Button fx:id="logInBtn" layoutX="93.0" layoutY="308.0" mnemonicParsing="false" onAction="#goToLogInPage" prefHeight="53.0" prefWidth="180.0" style="-fx-background-color: blue;" text="Log in" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="createAccBtn" layoutX="333.0" layoutY="139.0" mnemonicParsing="false" onAction="#goToCreateAccPage" prefHeight="60.0" prefWidth="180.0" text="Create account">
+            <Button fx:id="createAccBtn" layoutX="329.0" layoutY="308.0" mnemonicParsing="false" onAction="#goToCreateAccPage" prefHeight="53.0" prefWidth="180.0" style="-fx-background-color: blue;" text="Create account" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Separator layoutX="69.0" layoutY="252.0" prefHeight="2.0" prefWidth="464.0" />
-            <Button layoutX="250.0" layoutY="299.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="99.0" text="Exit" textFill="#bc0000">
+            <Separator layoutX="70.0" layoutY="78.0" prefHeight="2.0" prefWidth="464.0" />
+            <Button fx:id="exitBtn" layoutX="252.0" layoutY="432.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="99.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
